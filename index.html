@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Job Application</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <div class="form-header">
+                <h1><i class="fas fa-briefcase"></i> Join Our Team</h1>
+                <p class="subtitle">Take the first step towards your dream career</p>
+            </div>
+            
+            <div class="form-body">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+
+                <form id="jobApplicationForm" class="form-step">
+                    <div class="form-grid">
+                        <div class="form-group floating-label">
+                            <input 
+                                type="text" 
+                                id="firstName" 
+                                name="firstName" 
+                                placeholder=" "
+                                required
+                            />
+                            <label for="firstName">First Name</label>
+                        </div>
+
+                        <div class="form-group floating-label">
+                            <input 
+                                type="text" 
+                                id="lastName" 
+                                name="lastName" 
+                                placeholder=" "
+                                required
+                            />
+                            <label for="lastName">Last Name</label>
+                        </div>
+
+                        <div class="form-group floating-label full-width">
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder=" "
+                                required
+                            />
+                            <label for="email">Email Address</label>
+                        </div>
+
+                        <div class="form-group floating-label">
+                            <select id="jobRole" name="jobRole" required>
+                                <option value="">Select Position</option>
+                                <option value="frontend">Frontend Developer</option>
+                                <option value="backend">Backend Developer</option>
+                                <option value="fullstack">Full Stack Developer</option>
+                                <option value="uiux">UI/UX Designer</option>
+                                <option value="devops">DevOps Engineer</option>
+                                <option value="mobile">Mobile Developer</option>
+                            </select>
+                            <label for="jobRole">Job Role</label>
+                        </div>
+
+                        <div class="form-group floating-label">
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                placeholder=" "
+                                required
+                            />
+                            <label for="phone">Phone Number</label>
+                        </div>
+
+                        <div class="form-group floating-label full-width">
+                            <textarea 
+                                id="address" 
+                                name="address" 
+                                placeholder=" "
+                                required
+                            ></textarea>
+                            <label for="address">Address</label>
+                        </div>
+
+                        <div class="form-group floating-label">
+                            <input 
+                                type="text" 
+                                id="city" 
+                                name="city" 
+                                placeholder=" "
+                                required
+                            />
+                            <label for="city">City</label>
+                        </div>
+
+                        <div class="form-group floating-label">
+                            <input 
+                                type="text" 
+                                id="pincode" 
+                                name="pincode" 
+                                placeholder=" "
+                                required
+                            />
+                            <label for="pincode">PIN Code</label>
+                        </div>
+
+                        <div class="form-group floating-label">
+                            <input 
+                                type="date" 
+                                id="availableDate" 
+                                name="availableDate" 
+                                required
+                            />
+                            <label for="availableDate">Available From</label>
+                        </div>
+
+                        <div class="form-group floating-label">
+                            <input 
+                                type="text" 
+                                id="experience" 
+                                name="experience" 
+                                placeholder=" "
+                                required
+                            />
+                            <label for="experience">Years of Experience</label>
+                        </div>
+
+              
+
+                        <div class="form-group full-width">
+                            <label for="resume">Upload Resume/CV</label>
+                            <div class="file-upload">
+                                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required />
+                                <div class="file-upload-label">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    <span>Drop your resume here or click to browse</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width floating-label">
+                            <textarea 
+                                id="coverLetter" 
+                                name="coverLetter" 
+                                placeholder=" "
+                                rows="4"
+                            ></textarea>
+                            <label for="coverLetter">Cover Letter (Optional)</label>
+                        </div>
+                    </div>
+
+                    <div class="btn-container">
+                        <button type="button" class="btn btn-secondary">
+                            <i class="fas fa-save"></i> Save Draft
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Submit Application
+                        </button>
+                    </div>
+                </form>
+
+                <div class="success-message" id="successMessage">
+                    <div class="success-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h2>Application Submitted!</h2>
+                    <p>Thank you for your interest. We'll review your application and get back to you soon.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</body>
+</html>
